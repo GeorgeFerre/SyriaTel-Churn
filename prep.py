@@ -8,10 +8,11 @@ from sklearn.preprocessing import StandardScaler
 
 def preprocess(data):
     # Drop unnecessary columns
-    cols_to_drop = ["phone number"]
+    cols_to_drop = ["phone_number"]
     data.drop(cols_to_drop, axis=1, inplace=True)
 
     # Compute missing proportions
+
     #df =df.dropna()
     # Drop cols with >40% missing
 #     over_threshold = missing_props[missing_props >= 0.4]
