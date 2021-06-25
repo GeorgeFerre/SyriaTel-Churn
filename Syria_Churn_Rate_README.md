@@ -36,7 +36,7 @@ The dataset churn has two categories:
 * Model development was initialized with the logistric regression model. 
 * The recall score metric formed the basis for further development and optimization during the subsiquent model development.
 * Iterations were made from logistic regression to KNN, Random Forest and XGBoost models.
-XGBoost was selected and optimized as the final model.
+* XGBoost was selected and optimized as the final model.
 
 ***
 
