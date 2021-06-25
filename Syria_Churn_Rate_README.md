@@ -6,7 +6,6 @@
 
 This project creates a machine learning model that is able to predict the SyriaTel customers that are most likely to churn. Data for this project was sourced from the Kaggle website.The dataset includes 33 features and over 3,000 data points.
 
-
 ## Business Problem
 
 ***
@@ -36,7 +35,7 @@ The dataset churn has two categories:
 * Model development was initialized with the logistric regression model. 
 * The recall score metric formed the basis for further development and optimization during the subsiquent model development.
 * Iterations were made from logistic regression to KNN, Random Forest and XGBoost models.
-* XGBoost was selected and optimized as the final model.
+XGBoost was selected and optimized as the final model.
 
 ***
 
@@ -44,7 +43,7 @@ The dataset churn has two categories:
 ![Baseline Confusion Matrix](./Images/train_conf_mat.png)
 
 ###### Final Model
-![Final Model Confusion Matrix](./Images/test_conf_matrix.png)
+![Final Model Confusion Matrix](./Images/test_conf_mat.png)
 ***
 
 
@@ -54,23 +53,29 @@ The dataset churn has two categories:
 ![Final Model Features](./Images/feat_imp.png)
 
 
-Using the data provided, we were able to create a model with 85% recall, meaning of the customers who are going to leave, we are able to identify 85% of them. We were able to do this while maintining a high accuracy of 95%.
-Based on the feature importance we can determine that churn can be influenced by:
-1. **If the customer has an international plan.**
-2. **Voice mail plan and number of voicemail messages.**
-3. **Customer Service Calls.**
-4. **Total day charge.**
+This analysis leads to the following recommendations for creating a movie.
+1. **Customer Service Calls.**
+Establish Customer Service Calls audit program for continuous improvement
+2. **Market Performance.**
+Perform a market study to help understand how we can more competitive.
+3. **Data plans.**
+ Evaluate effectiveness of data plans  specifically for our international customers
 
-We can also see that a lot of states seemed to have made it into the top 20. Based on this information, we would recommend the following:
+## Project Limitations
 
-1. **Further investigation into needs of international plan customers. Consider if there is a move to online forms of communication for international users (Skype, Discord, Google Chat, FaceTime). See if more robust dataplans can be used**
-2. **Audit Customer Service Calls. Make sure cusotmers are being helped. If the model identifies a customer likely to leave, it may be worth checking if they have called in recently.**
-3. **Check to make sure rates are competitive in a given area. With total day charge as a significant factor in our model, it is worth making sure that rates are competitve, especially in states with higher churn.**
+Further analyses could provide even more insight into how you will create and distribute Microsoft's first movie:
 
-Finally, moving forward we can do the following:
-1. **Fix issue with area code data. This can help us determine geographic churn at a more granular level. (Worth noting that since these are not landlines there is not a 100% relation to customer area and area code, but can still be good for approximation).**
-2. **Look into call center statistics. Currently we only know how many times a customer may have called, but we should try to get more information such as customer satisfaction, call time, need for escalation, etc.**
-3. **Get more information about customer accounts. Currently we only have call data, we should know more about texting and data options as well. We can also see how many lines are on a given account.**
+**Customer churn rate coverage.**
+Factors responsible for the different state churn rates not covered
+
+**Area Codes.**
+Dataset had only three unique area codes. Area code feature was dropped
+
+**Call Rates.**
+Assumed that rates were charged per time period.
+
+**Customer Service Calls.**
+Not able to perform in-depth analysis on the details here.
 
 ## For More Information
 
@@ -83,12 +88,10 @@ For any additional questions, please contact **Brian Matsiko matsikobrian@yahoo.
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── README.md                         
+├── Syria_Churn_Rate_README.md                         
 ├── Final_Submission.ipynb  
 ├── SyriaTel_Churn_presentation.pdf         
 ├── Scrapbooks                         
 └── images
 ```
-
-
 
