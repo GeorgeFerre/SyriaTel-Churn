@@ -41,7 +41,7 @@ The dataset churn has two categories:
 ***
 
 ###### Baseline Model
-![Baseline Confusion Matrix](./Images/train_conf_mat.png)
+![Baseline Confusion Matrix](./Images/train_conf_matrix.png)
 
 ###### Final Model
 ![Final Model Confusion Matrix](./Images/test_conf_matrix.png)
