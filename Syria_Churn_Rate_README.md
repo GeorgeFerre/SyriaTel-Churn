@@ -5,7 +5,7 @@
 ## Overview
 
 This project creates a machine learning model that is able to predict the SyriaTel customers that are most likely to churn. Data for this project was sourced from the Kaggle website.The dataset includes 33 features and over 3,000 data points.
-![logo](images/logo.jpeg)
+
 
 ## Business Problem
 
@@ -44,7 +44,7 @@ The dataset churn has two categories:
 ![Baseline Confusion Matrix](./Images/train_conf_mat.png)
 
 ###### Final Model
-![Final Model Confusion Matrix](./Images/test_conf_mat.png)
+![Final Model Confusion Matrix](./Images/test_conf_matrix.png)
 ***
 
 
